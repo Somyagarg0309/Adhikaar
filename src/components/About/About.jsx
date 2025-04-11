@@ -6,24 +6,28 @@ const About = () => {
     <div>
       <section className="about-section">
         <div className="about-image">
-        <img 
-  src="src\assets\images\finalAbout.jpg" 
-  alt="Diverse people illustration" 
-  style={{ width: '100%',  objectFit: 'cover', borderRadius: '12px' }} 
-/>
+          <img 
+            src="src/assets/images/finalAbout.jpg" 
+            alt="Diverse people illustration" 
+            style={{ width: '100%', objectFit: 'cover', borderRadius: '12px' }} 
+          />
         </div>
         <div className="about-content">
           <div className="tag">Who We Are</div>
-          <h2>About Us</h2>
+          <h2>ADHIKAAR</h2>
           <p>
-            <span className="highlight">
-              LRAH (LGBTQ+ Rights & Advocacy Hub) is a global digital platform dedicated to empowering the LGBTQ+ community
-            </span>{' '}
-            by providing access to legal awareness tools, anonymous reporting, inclusive education, and community support. 
-            Our mission is to promote equality, amplify voices, and offer a safe space for advocacy, learning, and solidarity.
-            We partner with NGOs and allies worldwide to ensure real-time assistance, secure resources, and lasting impact.
+            <span className="highlight">ADHIKAAR</span> is a global platform dedicated to uplifting and supporting the LGBTQ+ community.
+            We provide essential tools including:
           </p>
-          <button className="btn">Know More</button>
+          <ul className="feature-list">
+            <li><strong>Chatbot:</strong> AI-based legal guidance & emotional support.</li>
+            <li><strong>Blog:</strong> Share and explore lived experiences and community updates.</li>
+            <li><strong>Scanner:</strong> Text image analysis in multiple languages for inclusivity checks.</li>
+            <li><strong>Schemes & News:</strong> Stay informed about government schemes and LGBTQ+ news.</li>
+          </ul>
+          <p>
+            With the help of global NGOs and communities, we aim to ensure safe spaces, real-time support, and widespread legal empowerment.
+          </p>
         </div>
       </section>
     </div>

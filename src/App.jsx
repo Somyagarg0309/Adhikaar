@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 // Feature Components
 import ScannerHome from './components/ScannerWeb/ScannerHome';
 import Bot from './components/ChatBotWeb/bot';
+import SchemesNewsHome from './components/SchemesNewsWeb/SchemesNewsHome';
 
 // Blog Feature Components
 import {
@@ -43,7 +44,7 @@ function App() {
         {/* ChatBot Feature */}
         <Route path="/chatbot" element={<Bot />} />
 
-        {/* Blog Feature Pages with internal navbar */}
+        {/* Blog Feature Pages */}
         <Route
           path="/blogs"
           element={
@@ -74,6 +75,9 @@ function App() {
 
         {/* Scanner Feature */}
         <Route path="/scanner" element={<ScannerHome />} />
+
+        {/* Schemes & News Feature */}
+        <Route path="/schemes-news" element={<SchemesNewsHome />} />
       </Routes>
     </Router>
   );

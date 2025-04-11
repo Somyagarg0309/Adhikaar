@@ -1,10 +1,10 @@
 .navbar {
-  background-color: #ffffff !important; /* Pure white */
-  padding: 1rem 0 !important;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 999 !important;
+  background-color: #F8F4E1;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .nav-links {
@@ -16,9 +16,9 @@
 }
 
 .nav-links a {
-  font-size: 1.4rem !important;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: #222 !important;
+  color: #222;
   text-decoration: none;
   padding: 0.75rem 0.5rem;
   transition: all 0.3s ease;

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "./Header";
 import Messages from "./Messages";
 import Input from "./Input";
 import BotMessage from "./BotMessage";
@@ -24,10 +23,14 @@ export default function Bot() {
   };
 
   return (
-    <div className="chatbot">
-      <Header />
-      <Messages messages={messages} />
-      <Input onSend={handleSend} />
+    <div className="chatbot-container">
+      <div className="chatbot-header">
+        Legal Awareness
+      </div>
+      <div className="chatbot-box">
+        <Messages messages={messages} />
+        <Input onSend={handleSend} />
+      </div>
     </div>
   );
 }

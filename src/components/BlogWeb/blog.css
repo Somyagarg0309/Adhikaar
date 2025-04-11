@@ -3,16 +3,16 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #640D5F, #FFB22C);
+  background: linear-gradient(to bottom right, #eef3fb, #d5e3f3);
   color: #333;
 }
 
 .blog-title {
   text-align: center;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   margin: 30px 0 20px;
   font-weight: 700;
-  color: #443627;
+  color: #333;
 }
 
 /* Navbar */
@@ -20,15 +20,16 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background: linear-gradient(to right, #B9B28A, #B9B28A);
+  background: #ffffff;
   padding: 15px 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .navbar a {
   text-decoration: none;
   font-weight: 600;
-  color: white;
+  color: #333;
   font-size: 1.1rem;
   padding: 10px 16px;
   border-radius: 8px;
@@ -36,29 +37,29 @@ body {
 }
 
 .navbar a:hover {
-  background: white;
-  color: #ff6f61;
+  background: #f0f0f0;
+  color: #007bff;
 }
 
 /* Buttons */
 .create-btn,
 .read-btn {
   display: inline-block;
-  padding: 12px 20px;
-  margin: 15px;
-  background: #ff6f61;
+  padding: 10px 18px;
+  margin-top: 10px;
+  background: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: transform 0.3s, background 0.3s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .create-btn:hover,
 .read-btn:hover {
-  background: #ff8a65;
+  background: #0056b3;
   transform: scale(1.05);
 }
 
@@ -66,34 +67,34 @@ body {
 .blog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 2rem;
   gap: 24px;
 }
 
 /* Blog Card */
 .blog-card {
-  background: #fffaf5;
-  border: 5px solid #ffd6cc;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
   border-radius: 16px;
   padding: 24px;
-  width: 400px;
-  height:400px;
+  width: 360px;
+  height: 400px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .blog-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
 }
 
 .blog-card h3 {
   font-size: 1.5rem;
-  color: #ff6f61;
+  color: #007bff;
   margin-bottom: 0.5rem;
 }
 
@@ -108,7 +109,7 @@ body {
 .blog-card .read-btn {
   align-self: flex-start;
   padding: 10px 16px;
-  background: #ff9a76;
+  background: #007bff;
   border: none;
   border-radius: 8px;
   color: white;
@@ -119,7 +120,7 @@ body {
 }
 
 .blog-card .read-btn:hover {
-  background: #ff7043;
+  background: #0056b3;
 }
 
 /* Form Styling */
@@ -129,10 +130,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: #fffefc;
+  background: #ffffff;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e3e3e3;
 }
 
 .blog-form input,
@@ -140,19 +142,19 @@ body {
   padding: 14px;
   font-size: 1rem;
   border-radius: 10px;
-  border: 1px solid #ffd6cc;
+  border: 1px solid #ccc;
   background: #fff;
   transition: border 0.3s;
 }
 
 .blog-form input:focus,
 .blog-form textarea:focus {
-  border-color: #ff6f61;
+  border-color: #007bff;
   outline: none;
 }
 
 .blog-form button {
-  background: #ff6f61;
+  background: #007bff;
   color: white;
   padding: 12px;
   font-size: 1.1rem;
@@ -164,7 +166,7 @@ body {
 }
 
 .blog-form button:hover {
-  background: #ff8a65;
+  background: #0056b3;
   transform: scale(1.05);
 }
 
