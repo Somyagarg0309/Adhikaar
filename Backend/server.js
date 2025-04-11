@@ -5,6 +5,7 @@ import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";  // Authentication routes
 import blogRoutes from "./routes/blogRoutes.js";
 import ocrRoutes from './routes/ocrRoutes.js';
+import chatbotRoutes from "./routes/chatbotRoutes.js";
 
 dotenv.config();  // Load environment variables
 mongoose.set('strictQuery', true);
@@ -18,6 +19,7 @@ app.use(cors());  // To allow cross-origin requests
 app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
 app.use("/api/ocr", ocrRoutes);
+app.use("/api/chatbot", chatbotRoutes);
 
 // Simple Route to test if server is running
 app.get("/", (req, res) => {
