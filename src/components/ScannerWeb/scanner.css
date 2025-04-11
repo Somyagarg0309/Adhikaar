@@ -1,0 +1,109 @@
+.scanner-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #eef3fb, #d5e3f3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.scanner-container {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  padding: 3rem 3rem;
+  background: linear-gradient(to right, #ffffff, #f4f8fc);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.scanner-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1a2e70;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(to right, #24408e, #007c91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scanner-section {
+  margin-bottom: 2rem;
+}
+
+.scanner-section label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+.scanner-section input[type="file"],
+.scanner-section select {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+.scanner-section input[type="file"]:hover,
+.scanner-section select:hover {
+  border-color: #24408e;
+}
+
+.scanner-analyze-button {
+  width: 100%;
+  padding: 1.1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: #24408e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.scanner-analyze-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.scanner-analyze-button:hover:enabled {
+  background-color: #1a2e70;
+}
+
+.scanner-report {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f1f5fb;
+  border-left: 5px solid #24408e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.scanner-report h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a2e70;
+}
+
+.scanner-report p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #333;
+}

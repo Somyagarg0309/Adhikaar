@@ -1,168 +1,70 @@
-.section{
-  background-color: #DCA06D;
-}
 .features-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px 20px;
-    background-color: #fff;
-  }
-  
-  .feature-card {
-    flex: 1 1 220px;
-    max-width: 300px;
-    text-align: center;
-    padding: 30px 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    background-color: #f9f9f9;
-    transition: transform 0.3s ease;
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .icon {
-    margin-bottom: 20px;
-  }
-  h1{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 700;
-    
-  }
-
-  /* Blog CSS */
-
-  /* BLOG CONTAINER */
-.blog-container {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 20px 30px;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.4s ease-in-out;
-}
-
-/* TITLES & HEADINGS */
-.blog-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2c3e50;
+  padding: 80px 30px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e9ecef 100%);
   text-align: center;
-  margin-bottom: 30px;
-  position: relative;
 }
 
-.blog-title::after {
-  content: '';
-  width: 60px;
-  height: 3px;
-  background: #3498db;
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 4px;
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
 }
 
-/* BLOG LIST ITEM */
-.blog-list-item {
-  margin-bottom: 25px;
-  padding: 15px 20px;
-  border-left: 4px solid #3498db;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.blog-list-item:hover {
-  background-color: #ecf0f1;
-  transform: translateX(5px);
-}
-
-/* BLOG LINK */
-.blog-link {
-  font-size: 1.2rem;
-  color: #2980b9;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.blog-link:hover {
-  color: #1abc9c;
-}
-
-/* BLOG DATE */
-.blog-date {
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  margin-top: 6px;
-}
-
-/* FORM */
-.blog-form input,
-.blog-form textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-size: 1rem;
-  background-color: #fefefe;
-  transition: border-color 0.3s ease;
-}
-
-.blog-form input:focus,
-.blog-form textarea:focus {
-  outline: none;
-  border-color: #3498db;
-}
-
-.blog-form button {
-  padding: 12px 25px;
-  font-size: 1rem;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 10px;
+.feature-card {
+  width: 360px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.blog-form button:hover {
-  background-color: #2980b9;
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feature-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.feature-card:hover .feature-img {
   transform: scale(1.03);
+  filter: brightness(1.07);
 }
 
-/* ANIMATIONS */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.icon {
+  margin-bottom: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .blog-container {
-    padding: 15px 20px;
-  }
+.feature-card h3 {
+  font-size: 26px;
+  color: #0d6efd;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
 
-  .blog-title {
-    font-size: 1.5rem;
-  }
-
-  .blog-form input,
-  .blog-form textarea {
-    font-size: 0.95rem;
-  }
+.feature-card p {
+  font-size: 17px;
+  color: #495057;
+  line-height: 1.7;
+}
+h1{
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  padding: 10px  12px;
+  background-color: #FFA955;
 }
