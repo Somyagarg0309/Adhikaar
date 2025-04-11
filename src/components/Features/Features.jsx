@@ -1,24 +1,32 @@
 import React from 'react';
-import ChatBot from './ChatBot';
-import SchemesNews from './SchemesNews';
-import Scanner from './Scanner';
+import { Link } from 'react-router-dom';
 import Blog from './Blog';
+import ChatBot from './Chatbot';
+import Scanner from './Scanner';
+import SchemesNews from './SchemesNews';
 import './Features.css';
 
-export const Features = () => {
+const Features = () => {
   return (
-   
-    <div className = "section">
-       <h1>Our Features</h1>
-    <div className="features-section">
-      
-      <ChatBot />
-      <SchemesNews />
-      <Scanner />
-      <Blog />
+    <div>
+      <h1 className="features-title">Our Features</h1>
+      <section className="features-section">
+        <div className="features-grid">
+          <Link to="/chatbot">
+            <ChatBot />
+          </Link>
+          <Link to="/schemes-news">
+            <SchemesNews />
+          </Link>
+          <Link to="/scanner">
+            <Scanner />
+          </Link>
+          <Link to="/blogs">
+            <Blog />
+          </Link>
+        </div>
+      </section>
     </div>
-    </div>
-  
   );
 };
 
