@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    90deg,
+    #e40303 0%,     /* Red */
+    #ff8c00 16.6%,  /* Orange */
+    #ffed00 33.3%,  /* Yellow */
+    #008026 50%,    /* Green */
+    #24408e 66.6%,  /* Blue */
+    #732982 83.3%,  /* Violet */
+    #fcf434 100%    /* Extra pop at the end */
+  );
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.left-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon-img {
+  width: 58px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.icon-img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.register-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-link:hover {
+  background-color: #AFDDFF;
+  color: black;
+  transform: scale(1.05);
+}
