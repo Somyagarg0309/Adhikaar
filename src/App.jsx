@@ -9,21 +9,26 @@ import About from './components/About/About';
 import Features from './components/Features/Features';
 import Footer from './components/Footer/Footer';
 
-// Blog Pages
-import BlogHome from './components/BlogWeb/BlogHome';
-import BlogCreate from './components/BlogWeb/BlogCreate';
-import BlogDetails from './components/BlogWeb/BlogDetails';
+// Feature Components
+import ScannerHome from './components/ScannerWeb/ScannerHome';
+import Bot from './components/ChatBotWeb/bot';
 
-// Context
-import { BlogProvider } from './components/BlogWeb/BlogContext';
+// Blog Feature Components
+import {
+  BlogHome,
+  BlogForm,
+  BlogDetails,
+  Navbar as BlogNavbar
+} from './components/BlogWeb';
 
 function App() {
   return (
     <Router>
-      <BlogProvider>
-        <Routes>
-          {/* Main Page Layout */}
-          <Route path="/" element={
+      <Routes>
+        {/* Main Landing Page */}
+        <Route
+          path="/"
+          element={
             <>
               <Header />
               <Navbar />
@@ -32,14 +37,44 @@ function App() {
               <Features />
               <Footer />
             </>
-          } />
+          }
+        />
 
-          {/* Blog Routes */}
-          <Route path="/blogs" element={<BlogHome />} />
-          <Route path="/blogs/new" element={<BlogCreate />} />
-          <Route path="/blogs/:id" element={<BlogDetails />} />
-        </Routes>
-      </BlogProvider>
+        {/* ChatBot Feature */}
+        <Route path="/chatbot" element={<Bot />} />
+
+        {/* Blog Feature Pages with internal navbar */}
+        <Route
+          path="/blogs"
+          element={
+            <>
+              <BlogNavbar />
+              <BlogHome />
+            </>
+          }
+        />
+        <Route
+          path="/blogs/new"
+          element={
+            <>
+              <BlogNavbar />
+              <BlogForm />
+            </>
+          }
+        />
+        <Route
+          path="/blogs/:id"
+          element={
+            <>
+              <BlogNavbar />
+              <BlogDetails />
+            </>
+          }
+        />
+
+        {/* Scanner Feature */}
+        <Route path="/scanner" element={<ScannerHome />} />
+      </Routes>
     </Router>
   );
 }

@@ -1,0 +1,88 @@
+.scanner-container {
+    max-width: 100%;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(to right, #fdfdfd, #f7f7f7);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #24408e;
+    margin-bottom: 2rem;
+  }
+  
+  .scanner-section {
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="file"]:hover,
+  select:hover {
+    border-color: #24408e;
+  }
+  
+  .analyze-button {
+    margin-top: 2rem;
+    padding: 0.9rem 1.8rem;
+    background-color: #24408e;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .analyze-button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+  
+  .analyze-button:hover:enabled {
+    background-color: #1a2e70;
+  }
+  
+  .scanner-report {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background-color: #eef1f6;
+    border-left: 5px solid #24408e;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .scanner-report h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .scanner-report p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
