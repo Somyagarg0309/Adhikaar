@@ -31,7 +31,7 @@ cd frontend
 Inside the frontend directory, create a file named .env and add the following line:
 
 ```
-VITE_REACT_APP_BACKEND_BASEURL=https://adhikaar.onrender.com
+VITE_REACT_APP_BACKEND_BASEURL=http://adhikaar.onrender.com
 ```
 ### 4. Open terminal and install dependencies
 ```
