@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Blog from './Blog';
-import ChatBot from './Chatbot';
+import ChatBot from './ChatBot';
 import Scanner from './Scanner';
 import SchemesNews from './SchemesNews';
 import './Features.css';
