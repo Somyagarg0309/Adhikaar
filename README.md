@@ -52,3 +52,8 @@ The frontend will start locally. The backend is already deployed, so no backend 
 - **Database** - MongoDB (User and Blog details)
 - **Machine Learning** - PaddleOCR, Tesseract, Tensorflow, Llama, BERT
 
+ ---
+ 
+ ## Built for Devcation'25 (HackNSolve)
+ - Sustainable Development Track : SDG 10 (Reduced Inequalities)
+ 
