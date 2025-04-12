@@ -6,10 +6,17 @@ export default function BotMessage({ fetchMessage }) {
 
   useEffect(() => {
     async function loadMessage() {
-      const msg = await fetchMessage();
-      setLoading(false);
-      setMessage(msg);
+      try {
+        const msg = await fetchMessage();
+        setMessage(msg);
+      } catch (err) {
+        setMessage("Failed to load message.");
+        console.error("BotMessage error:", err);
+      } finally {
+        setLoading(false);
+      }
     }
+
     loadMessage();
   }, [fetchMessage]);
 
