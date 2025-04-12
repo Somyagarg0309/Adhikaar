@@ -6,6 +6,7 @@ import authRoutes from "./routes/authRoutes.js";  // Authentication routes
 import blogRoutes from "./routes/blogRoutes.js";
 import ocrRoutes from './routes/ocrRoutes.js';
 import chatbotRoutes from "./routes/chatbotRoutes.js";
+import newsRoutes from "./routes/newsRoutes.js";
 
 dotenv.config();  // Load environment variables
 mongoose.set('strictQuery', true);
@@ -20,6 +21,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
 app.use("/api/ocr", ocrRoutes);
 app.use("/api/chatbot", chatbotRoutes);
+app.use("/api/news", newsRoutes); 
 
 // Simple Route to test if server is running
 app.get("/", (req, res) => {

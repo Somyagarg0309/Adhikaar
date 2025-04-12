@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-const API_KEY = import.meta.env.VITE_SEARCH_API_KEY;
-// const URL = `https://newsapi.org/v2/everything?q=lgbtq%20rights&sortBy=publishedAt&apiKey=${API_KEY}`;
-const URL = `https://newsapi.org/v2/everything?q=lgbtq%20OR%20queer%20OR%20transgender%20OR%20gay%20OR%20lesbian&sortBy=publishedAt&pageSize=20&language=en&qInTitle=india&apiKey=${API_KEY}`;
 const News = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -11,7 +8,7 @@ const News = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(URL);
+        const response = await fetch("http://localhost:5001/api/news/get-news"); // Backend endpoint
         if (!response.ok) {
           throw new Error("Failed to fetch articles");
         }
