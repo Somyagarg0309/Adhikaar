@@ -24,7 +24,8 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5001/api/auth/login', formData);
+      // const res = await axios.post('http://localhost:5001/api/auth/login', formData);
+      const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/auth/login`, formData);
       localStorage.setItem('token', res.data.token);
       alert("Login Successful!");
       navigate('/'); // Redirect to home

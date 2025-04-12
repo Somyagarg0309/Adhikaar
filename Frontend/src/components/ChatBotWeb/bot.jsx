@@ -21,7 +21,7 @@ export default function Bot() {
       <BotMessage
         fetchMessage={async () => {
           try {
-            const response = await fetch("http://localhost:5001/api/chatbot/chat", {
+            const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/chatbot/chat`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

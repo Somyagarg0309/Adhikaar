@@ -22,7 +22,7 @@ const ScannerHome = () => {
     setReport('');
 
     try {
-      const response = await fetch('http://localhost:5001/api/ocr', {
+      const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/ocr`, {
         method: 'POST',
         body: formData,
       });

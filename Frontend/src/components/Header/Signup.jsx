@@ -25,7 +25,8 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5001/api/auth/signup', formData);
+      // const res = await axios.post('http://localhost:5001/api/auth/signup', formData);
+      const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/auth/signup`, formData);
       localStorage.setItem('token', res.data.token);
       alert("Signup Successful!");
       navigate('/'); // Redirect to home

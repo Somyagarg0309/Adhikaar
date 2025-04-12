@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const api = axios.create({
-  baseURL: "http://localhost:5001/api", // adjust this if your backend runs elsewhere
+  baseURL: `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api`, // adjust this if your backend runs elsewhere
 });
 
 
