@@ -8,7 +8,8 @@ const News = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/news/get-news"); // Backend endpoint
+        // const response = await fetch("http://localhost:5001/api/news/get-news"); // Backend endpoint
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/news/get-news`);
         if (!response.ok) {
           throw new Error("Failed to fetch articles");
         }
