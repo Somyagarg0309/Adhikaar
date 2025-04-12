@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './Header.css';
 
 
 const Login = () => {
@@ -36,18 +37,34 @@ const Login = () => {
 
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-        <button type="submit">Login</button>
+    <div>
+    <h2 className="form-heading">Login</h2>
+    <div className="container-center">
+      <form onSubmit={handleSubmit} className="shared-form">
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          onChange={handleChange}
+          required
+          className="input-field"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          onChange={handleChange}
+          required
+          className="input-field"
+        />
+        <button type="submit" className="submit-btn">Login</button>
       </form>
     </div>
+  </div>
+  
+  
   );
-};
-
+  }
 
 export default Login;
-
 

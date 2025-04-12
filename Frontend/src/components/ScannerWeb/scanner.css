@@ -1,7 +1,7 @@
 .scanner-wrapper {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #eef3fb, #d5e3f3);
+  background: linear-gradient(to bottom right, #A5BFCC, #A5BFCC);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   max-width: 1200px;
   height: auto;
   padding: 3rem 3rem;
-  background: linear-gradient(to right, #ffffff, #f4f8fc);
+  background: #F7F7F7;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
   font-family: 'Poppins', sans-serif;
@@ -27,7 +27,7 @@
 .scanner-heading {
   font-size: 4rem;
   font-weight: 800;
-  color: #1a2e70;
+  color: #002f50;
   text-align: center;
   margin-bottom: 2.5rem;
   background: linear-gradient(to right, #24408e, #007c91);

@@ -91,9 +91,9 @@
 
 // export default App;
 
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 
 // Static Components
 import Header from './components/Header/Header';
@@ -103,14 +103,12 @@ import About from './components/About/About';
 import Features from './components/Features/Features';
 import Footer from './components/Footer/Footer';
 import Login from './components/Header/Login';
-
-
 import Signup from './components/Header/Signup';
+
 // Feature Components
 import ScannerHome from './components/ScannerWeb/ScannerHome';
 import Bot from './components/ChatBotWeb/bot';
 import SchemesNewsHome from './components/SchemesNewsWeb/SchemesNewsHome';
-
 
 // Blog Feature Components
 import {
@@ -120,19 +118,16 @@ import {
   Navbar as BlogNavbar
 } from './components/BlogWeb';
 
-
 function App() {
   return (
     <Router>
       <Routes>
         {/* Home Page */}
-       
         <Route
           path="/"
           element={
             <>
               <Header />
-             
               <Navbar />
               <Carousel />
               <About />
@@ -142,12 +137,40 @@ function App() {
           }
         />
 
-
         {/* ChatBot */}
-        <Route path="/chatbot" element={<Bot />} />
+        <Route
+          path="/chatbot"
+          element={
+            <>
+              <Navbar />
+              <Bot />
+            </>
+          }
+        />
 
+        {/* Scanner */}
+        <Route
+          path="/scanner"
+          element={
+            <>
+              <Navbar />
+              <ScannerHome />
+            </>
+          }
+        />
 
-        {/* Blog Routes */}
+        {/* Schemes & News */}
+        <Route
+          path="/schemes-news"
+          element={
+            <>
+              <Navbar />
+              <SchemesNewsHome />
+            </>
+          }
+        />
+
+        {/* Blog Routes (Using separate BlogNavbar as before) */}
         <Route
           path="/blogs"
           element={
@@ -176,13 +199,6 @@ function App() {
           }
         />
 
-
-        {/* Scanner */}
-        <Route path="/scanner" element={<ScannerHome />} />
-
-
-        {/* Schemes & News */}
-        <Route path="/schemes-news" element={<SchemesNewsHome />} />
         {/* ✅ Auth Routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -191,7 +207,4 @@ function App() {
   );
 }
 
-
 export default App;
-
-

@@ -1,7 +1,7 @@
 .page {
   min-height: 100vh;
-  background-color: #fafcff;
-  padding: 2rem;
+  background-color: #A5BFCC;
+  padding: 3rem;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
@@ -21,7 +21,11 @@
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
-
+.leftSection h2{
+  color: #002f50;
+  font-weight: 700;
+  font-size: 2rem;
+}
 .leftSection:hover {
   transform: scale(1.005);
 }
@@ -34,7 +38,7 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #333;
   margin-bottom: 1.5rem;
   line-height: 1.6;
@@ -72,16 +76,37 @@
 }
 
 .searchBox button {
-  background-color: #4a90e2;
+  background-color: #002f50;
   color: white;
   border: none;
-  padding: 0.7rem 1.5rem;
+  padding: 0.9rem 1.7rem;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
+
+.knowMoreInline,
+.knowMore {
+  margin-left: 1rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  background-color: #002f50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.knowMoreInline:hover,
+.knowMore:hover {
+  background-color: #001d33;
+  transform: translateY(-1px);
+}
+
+
 
 .searchBox button:hover {
   background-color: #357ab8;
