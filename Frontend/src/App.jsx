@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Static Components
 import Header from './components/Header/Header';
+import Login from './components/Header/Login';
+import Signup from './components/Header/Signup';
 import Navbar from './components/Navbar/Navbar';
 import Carousel from './components/Carousel/Carousel';
 import About from './components/About/About';
@@ -78,6 +80,10 @@ function App() {
 
         {/* Schemes & News Feature */}
         <Route path="/schemes-news" element={<SchemesNewsHome />} />
+        
+        {/* ✅ Auth Routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
