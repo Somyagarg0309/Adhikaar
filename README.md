@@ -43,3 +43,10 @@ npm run dev
 ```
 The frontend will start locally. The backend is already deployed, so no backend setup is required.
 
+##Tech Stack
+
+- **Frontend** - HTML,CSS,JAVACRIPT,REACT (VITE BUILD and Vercel Deploy), BOOTSTRAP
+- **Backend** - Nodejs, Expressjs (Render Deploy), Google API call
+- **Database** - MongoDB (User and Blog details)
+- **Machine Learning** - PaddleOCR, Tesseract, Tensorflow, Llama, BERT
+
