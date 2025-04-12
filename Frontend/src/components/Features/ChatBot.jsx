@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaComments } from 'react-icons/fa';
-import chatbotImg from '../../assets/images/chatbotImg.avif';
+import chatbotImg from '/assets/images/chatbotImg.avif';
 import './Features.css';
 
 const ChatBot = () => {

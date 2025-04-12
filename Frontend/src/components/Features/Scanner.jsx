@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaQrcode } from 'react-icons/fa';
-import scannerImg from '../../assets/images/scannerImg.webp';
+import scannerImg from '/assets/images/scannerImg.webp';
 import './Features.css';
 
 const Scanner = () => {

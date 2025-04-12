@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaNewspaper } from 'react-icons/fa';
-import schemesNewsImg from '../../assets/images/schemesNewsImg.jpg';
+import schemesNewsImg from '/assets/images/schemesNewsImg.jpg';
 import './Features.css';
 
 const SchemesNews = () => {

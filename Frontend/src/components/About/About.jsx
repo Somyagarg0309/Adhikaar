@@ -7,7 +7,7 @@ const About = () => {
       <section className="about-section" id='About'>
         <div className="about-image">
           <img 
-            src="src/assets/images/finalAbout.jpg" 
+            src="/assets/images/finalAbout.jpg" 
             alt="Diverse people illustration" 
             style={{ width: '100%', objectFit: 'cover', borderRadius: '12px' }} 
           />

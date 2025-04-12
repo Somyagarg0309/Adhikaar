@@ -13,20 +13,9 @@ const Carousel = () => {
 
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="src/assets/images/Slide1.jpg" className="d-block w-100 carousel-img" alt="Slide1" />
+            <img src="/assets/images/Slide1.jpg" className="d-block w-100 carousel-img" alt="Slide1" />
           </div>
-          {/* <div className="carousel-item">
-            <img src="src/assets/images/Slide2.jpg" className="d-block w-100 carousel-img" alt="Slide2" />
-          </div>
-          <div className="carousel-item">
-            <img src="src/assets/images/Slide3.avif" className="d-block w-100 carousel-img" alt="Slide3" />
-          </div>
-          <div className="carousel-item">
-            <img src="src/assets/images/Slide4.jpeg" className="d-block w-100 carousel-img" alt="Slide3" />
-          </div>
-          <div className="carousel-item">
-            <img src="src/assets/images/img3.webp" className="d-block w-100 carousel-img" alt="Slide3" />
-          </div> */}
+
         </div>
 
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

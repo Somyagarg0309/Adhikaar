@@ -29,7 +29,7 @@ const Header = () => {
     <header className="header">
       <div className="left-title">ADHIKAAR</div>
       <div className="right-section">
-        <img src="src/assets/images/logo-img.png" alt="Adhikaar Icon" className="icon-img" />
+        <img src="/assets/images/logo.png" alt="Adhikaar Icon" className="icon-img" />
         {isLoggedIn ? (
           <button onClick={handleLogout} className="auth-btn">Logout</button>
         ) : (

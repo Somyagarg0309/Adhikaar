@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBlog } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import blogImg from '../../assets/images/blogImg.png';
+import blogImg from '/assets/images/blogImg.png';
 import './Features.css';
 
 const Blog = () => {
