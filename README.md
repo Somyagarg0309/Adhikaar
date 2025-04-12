@@ -55,8 +55,8 @@ The frontend will start locally. The backend is already deployed, so no backend 
  ---
  
  ## Built for Devcation'25 (HackNSolve)
-- Sustainable Development Track : SDG 10 (Reduced Inequalities) : Adhikaar reduces inequality by making legal information and resources accessible to LGBTQ+ and marginalized communities, empowering them to understand and exercise their rights.
-- Digital Legal Access: Minimizes the need for in-person visits and printed materials, reducing carbon emissions and paper waste.
-- Inclusive Online Platform: Empowers underserved communities without requiring physical infrastructure, saving energy and resources.
-- Real-Time Updates: Keeps users informed through digital channels, cutting down on traditional media dependency.
-- AI Automation: Reduces manual workload, enabling efficient legal support with fewer resources.
+- **Sustainable Development Track SDG 10 (Reduced Inequalities)** - Adhikaar reduces inequality by making legal information and resources accessible to LGBTQ+ and marginalized communities, empowering them to understand and exercise their rights.
+- **Digital Legal Access** - Minimizes the need for in-person visits and printed materials, reducing carbon emissions and paper waste.
+- **Inclusive Online Platform** - Empowers underserved communities without requiring physical infrastructure, saving energy and resources.
+- **Real-Time Updates** - Keeps users informed through digital channels, cutting down on traditional media dependency.
+- **AI Automation** - Reduces manual workload, enabling efficient legal support with fewer resources.
