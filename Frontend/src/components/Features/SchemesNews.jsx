@@ -9,7 +9,7 @@ const SchemesNews = () => {
       <img src={schemesNewsImg} alt="Schemes & News preview" className="feature-img" />
       <div className="icon"><FaNewspaper size={50} color="#0d6efd" /></div>
       <h3>Schemes & News</h3>
-      <p>Stay updated with the latest policies, legal reforms, and inclusive schemes.</p>
+      <p>Stay updated with the latest policies, legal reforms, inclusive schemes, and government initiatives.</p>
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-
 const Signup = () => {
   const [formData, setFormData] = useState({
     username: '',
@@ -10,9 +9,7 @@ const Signup = () => {
     password: ''
   });
 
-
   const navigate = useNavigate();
-
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -21,33 +18,59 @@ const Signup = () => {
     }));
   };
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // const res = await axios.post('http://localhost:5001/api/auth/signup', formData);
-      const res = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/auth/signup`, formData);
+      const res = await axios.post(
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/auth/signup`,
+        formData
+      );
       localStorage.setItem('token', res.data.token);
       alert("Signup Successful!");
-      navigate('/'); // Redirect to home
+      navigate('/');
     } catch (err) {
       alert(err.response?.data?.message || 'Signup failed');
     }
   };
 
-
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Signup</h2>
-      <form onSubmit={handleSubmit}>
-        <input name="username" placeholder="Username" onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
-        <button type="submit">Signup</button>
-      </form>
-    </div>
-  );
-};
+    <div>
+  <h2 className="form-heading">Sign Up</h2>
+  <div className="container-center">
+    <form onSubmit={handleSubmit} className="shared-form">
+      <input
+        name="username"
+        placeholder="Username"
+        value={formData.username}
+        onChange={handleChange}
+        required
+        className="input-field"
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+        className="input-field"
+      />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        value={formData.password}
+        onChange={handleChange}
+        required
+        className="input-field"
+      />
+      <button type="submit" className="submit-btn">Signup</button>
+    </form>
+  </div>
+</div>
 
+  );
+  
+};
 
 export default Signup;

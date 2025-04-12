@@ -1,7 +1,7 @@
 .chatbot-container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #f1f4f9, #dde9f4);
+  background: linear-gradient(to bottom right, #A5BFCC, #A5BFCC);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  background: #F7F7F7;
   display: flex;
   flex-direction: column;
   width: 75%; /* <-- Set width to 75% of screen */
@@ -43,6 +43,9 @@
 
 .message-container {
   width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  flex-direction: column; 
 }
 
 .bot-message {
@@ -60,6 +63,7 @@
 .user-message {
   max-width: 60%;
   align-self: flex-end;
+  margin-left: auto; /* Pushes message to the right */
   padding: 16px 20px;
   margin: 8px 0;
   border-radius: 20px 20px 5px 20px;

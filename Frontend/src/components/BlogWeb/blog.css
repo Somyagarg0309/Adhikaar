@@ -3,64 +3,69 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #eef3fb, #d5e3f3);
-  color: #333;
+  background: #A5BFCC;
+  color: #002f50;
 }
 
+/* Blog Title */
 .blog-title {
   text-align: center;
-  font-size: 3.2rem;
-  margin: 30px 0 20px;
+  font-size: 4.5rem;
+  margin: 40px 0 30px;
   font-weight: 700;
-  color: #333;
+  color: #002f50;
 }
 
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   background: #ffffff;
-  padding: 15px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1.5rem;
 }
 
 .navbar a {
   text-decoration: none;
-  font-weight: 600;
-  color: #333;
-  font-size: 1.1rem;
-  padding: 10px 16px;
-  border-radius: 8px;
+  font-weight: 700;
+  color: #002f50;
+  padding: 12px 20px;
+  border-radius: 10px;
   transition: background 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-  background: #f0f0f0;
-  color: #007bff;
+  background: #e0e0e0;
+  color: #0056b3;
 }
 
 /* Buttons */
 .create-btn,
-.read-btn {
+.read-btn,
+.blog-card button {
   display: inline-block;
-  padding: 10px 18px;
+  padding: 12px 24px;
   margin-top: 10px;
-  background: #007bff;
+  background: #002f50;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: transform 0.3s, background 0.3s;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  text-align: center;
 }
 
 .create-btn:hover,
-.read-btn:hover {
+.read-btn:hover,
+.blog-card button:hover {
   background: #0056b3;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 /* Blog List */
@@ -69,22 +74,23 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
-  gap: 24px;
+  gap: 32px;
 }
 
 /* Blog Card */
 .blog-card {
-  background: #ffffff;
+  background: #F7F7F7;
   border: 1px solid #e3e3e3;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 24px;
   width: 360px;
-  height: 400px;
+  height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  color: #002f50;
 }
 
 .blog-card:hover {
@@ -93,71 +99,76 @@ body {
 }
 
 .blog-card h3 {
-  font-size: 1.5rem;
-  color: #007bff;
+  font-size: 1.6rem;
+  color: #002f50;
   margin-bottom: 0.5rem;
 }
 
 .blog-card p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  color: #002f50;
+  line-height: 1.6;
   margin-bottom: 1rem;
-  flex-grow: 1;
 }
 
-.blog-card .read-btn {
-  align-self: flex-start;
-  padding: 10px 16px;
-  background: #007bff;
-  border: none;
+/* Blog Detail */
+.blog-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
   border-radius: 8px;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: background 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e3e3e3;
+  color: #002f50;
 }
 
-.blog-card .read-btn:hover {
-  background: #0056b3;
+.blog-detail h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-/* Form Styling */
+.blog-detail p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Blog Form */
 .blog-form {
   width: 70%;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
+  padding: 35px;
+  border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   border: 1px solid #e3e3e3;
+  color: #002f50;
 }
 
 .blog-form input,
 .blog-form textarea {
   padding: 14px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
-  transition: border 0.3s;
+  color: #002f50;
 }
 
 .blog-form input:focus,
 .blog-form textarea:focus {
-  border-color: #007bff;
+  border-color: #002f50;
   outline: none;
 }
 
 .blog-form button {
-  background: #007bff;
+  background: #002f50;
   color: white;
   padding: 12px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border: none;
   border-radius: 10px;
@@ -170,14 +181,16 @@ body {
   transform: scale(1.05);
 }
 
-/* Responsive Typography & Layout */
+/* Responsive Layout */
 @media (max-width: 768px) {
   .blog-title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
-  .navbar a {
-    font-size: 1rem;
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.3rem;
   }
 
   .blog-card {
@@ -195,11 +208,12 @@ body {
 
 @media (max-width: 480px) {
   .blog-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .create-btn,
-  .read-btn {
+  .read-btn,
+  .blog-form button {
     padding: 10px 16px;
     font-size: 1rem;
   }
