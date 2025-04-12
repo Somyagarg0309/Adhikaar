@@ -5,13 +5,14 @@ import styles from './Navbar.module.css';
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles['nav-links']}>
-        <Link to="/">Home</Link>
-        <Link to="/">About Us</Link>
-        <Link to="/chatbot">Chatbot</Link>
-        <Link to="/blogs">Blog</Link>
-        <Link to="/scanner">Scanner</Link>
-        <Link to="/schemes-news">Schemes & News</Link>
+      <div className={styles["nav-links"]}>
+        <a href="/">Home</a>
+        <a href="#AboutUs">About Us</a>
+        <a href="#f">Chatbot</a>
+        <a href="#f">Schemes & News</a>
+        <a href="#f">Scanner</a>
+        <a href="#f">Blog</a>
+        <a href="#Contact">Contact Us</a>
       </div>
     </nav>
   );

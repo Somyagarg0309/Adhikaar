@@ -9,7 +9,7 @@ import './Features.css';
 const Features = () => {
   return (
     <div>
-      <h1 className="features-title">Our Features</h1>
+      <h1 className="features-title" id='f'>Our Features</h1>
       <section className="features-section">
         <div className="features-grid">
           <Link to="/chatbot">
