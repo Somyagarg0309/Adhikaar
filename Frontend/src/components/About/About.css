@@ -5,8 +5,9 @@
   padding: 40px 60px;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: #f9f9f9;
-  min-height: 70vh;
+  background-color:#121d41 ;
+   min-height : 70vh;
+  
 }
 
 .about-image {
@@ -48,21 +49,21 @@
 }
 
 .about-content h2 {
-  font-size: 46px;
+  font-size: 70px;
   margin-bottom: 22px;
-  color: #1e1e1e;
+  color: #ffffff;
   font-weight: 800;
   transition: color 0.3s ease;
 }
 
 .about-content h2:hover {
-  color: #3f3db4;
+  color: #9bbee6;
 }
 
 .about-content p {
-  font-size: 22px;
+  font-size: 27px;
   line-height: 1.8;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
@@ -81,10 +82,11 @@
   margin-bottom: 8px;
   line-height: 1.6;
   font-weight: 500;
+  color: #ffffff;
 }
 
 .highlight {
-  color: #3f3db4;
+  color: #ffffff;
   font-weight: 700;
 }
 

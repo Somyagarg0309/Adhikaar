@@ -32,44 +32,52 @@ const Signup = () => {
       alert(err.response?.data?.message || 'Signup failed');
     }
   };
-
   return (
     <div>
-  <h2 className="form-heading">Sign Up</h2>
-  <div className="container-center">
-    <form onSubmit={handleSubmit} className="shared-form">
-      <input
-        name="username"
-        placeholder="Username"
-        value={formData.username}
-        onChange={handleChange}
-        required
-        className="input-field"
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        value={formData.email}
-        onChange={handleChange}
-        required
-        className="input-field"
-      />
-      <input
-        type="password"
-        name="password"
-        placeholder="Password"
-        value={formData.password}
-        onChange={handleChange}
-        required
-        className="input-field"
-      />
-      <button type="submit" className="submit-btn">Signup</button>
-    </form>
-  </div>
-</div>
-
+      <h2 className="form-heading">Sign Up</h2>
+      <div className="container-center">
+        <form onSubmit={handleSubmit} className="shared-form">
+          <label htmlFor="username" className="input-label">Username</label>
+          <input
+            id="username"
+            name="username"
+            placeholder="Username"
+            value={formData.username}
+            onChange={handleChange}
+            required
+            className="input-field"
+          />
+  
+          <label htmlFor="email" className="input-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="input-field"
+          />
+  
+          <label htmlFor="password" className="input-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+            className="input-field"
+          />
+  
+          <button type="submit" className="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
   );
+  
   
 };
 

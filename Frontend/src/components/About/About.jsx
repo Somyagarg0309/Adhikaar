@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import './About.css';
 
 const About = () => {
+  const location = useLocation();
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'about') {
+      aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
+
   return (
     <div>
-      <section className="about-section" id='About'>
+      <section className="about-section" id="About" ref={aboutRef}>
         <div className="about-image">
           <img 
             src="/assets/images/finalAbout.jpg" 

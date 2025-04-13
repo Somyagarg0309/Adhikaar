@@ -8,7 +8,7 @@ const Scanner = () => {
     <div className="feature-card">
       <img src={scannerImg} alt="Scanner preview" className="feature-img" />
       <div className="icon"><FaQrcode size={50} color="#0d6efd" /></div>
-      <h3>Scanner</h3>
+      <h3>Document Scanner</h3>
       <p>Scan QR codes to access help, track complaint status, or get legal support instantly.</p>
     </div>
   );

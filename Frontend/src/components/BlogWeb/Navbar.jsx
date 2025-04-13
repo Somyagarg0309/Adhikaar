@@ -4,9 +4,9 @@ import "./blog.css";
 
 const Navbar = () => (
   <nav className="navbar">
-    <Link to="/blogs">Home</Link>
-    <Link to="/blogs/new">Create Blog</Link>
-  </nav>
+  <Link to="/blogs" className="nav-button">Blogs</Link>
+  <Link to="/blogs/new" className="nav-button">Create Blog</Link>
+</nav>
 );
 
 export default Navbar;

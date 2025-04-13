@@ -3,30 +3,25 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #A5BFCC;
+  background: #121d41;
   color: #002f50;
 }
 
 /* Blog Title */
 .blog-title {
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 5rem;
   margin: 40px 0 30px;
   font-weight: 700;
-  color: #002f50;
+  color: #ffffff;
+}
+.blog-navbar {
+  margin-top: 20px;   /* creates gap from main Navbar above */
+  margin-bottom: 20px;
 }
 
+
 /* Navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  background: #ffffff;
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  font-size: 1.5rem;
-}
 
 .navbar a {
   text-decoration: none;
@@ -79,7 +74,7 @@ body {
 
 /* Blog Card */
 .blog-card {
-  background: #F7F7F7;
+  background: #ffffff;
   border: 1px solid #e3e3e3;
   border-radius: 8px;
   padding: 24px;
@@ -90,7 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  color: #002f50;
+  color: #121d41;
 }
 
 .blog-card:hover {
@@ -217,4 +212,47 @@ body {
     padding: 10px 16px;
     font-size: 1rem;
   }
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #121d41;
+}
+
+/* Button-like links */
+.nav-button {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  background-color: #ffffff;
+  color: #002f50;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #9bbee6;
+  color: black;
+  transform: translateY(-1px);
+}
+
+.edit-btn {
+  padding: 10px 20px;
+  background-color: #007c91;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.edit-btn:hover {
+  background-color: #005f73;
+  transform: translateY(-1px);
 }

@@ -11,7 +11,7 @@ const Blog = () => {
     <div className="feature-card" onClick={() => navigate('/blogs')}>
       <img src={blogImg} alt="Blog preview" className="feature-img" />
       <div className="icon"><FaBlog size={50} color="#0d6efd" /></div>
-      <h3>Blog</h3>
+      <h3>Blogs</h3>
       <p>Explore inspiring stories, case studies, and community voices on inclusion and justice.</p>
     </div>
   );

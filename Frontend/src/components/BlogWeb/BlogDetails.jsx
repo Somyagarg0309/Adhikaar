@@ -32,7 +32,8 @@ const BlogDetails = () => {
     <div className="blog-detail">
       <h2>{blog.title}</h2>
       <p>{blog.content}</p>
-      <button onClick={() => navigate("/blogs/new", { state: { edit: true, blog } })}>Edit</button>
+      <button className="edit-btn" 
+      onClick={() => navigate("/blogs/new", { state: { edit: true, blog } })}>Edit</button>
     </div>
   );
 };
