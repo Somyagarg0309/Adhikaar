@@ -24,11 +24,32 @@ const SchemesNewsHome = () => {
           </div>
 
           <ul className={styles.schemeList}>
-            <li>🏙️ <strong>Smart Cities Mission</strong> – Ministry of Urban Development   <button className={styles.knowMore}>Know More</button> </li>
-            <li>🌸 <strong>Floriculture Development Guidelines</strong>  <button className={styles.knowMore}>Know More</button></li>
-            <li>🛡️ <strong>Social Defence Schemes</strong> – Ministry of Social Justice  <button className={styles.knowMore}>Know More</button></li>
-            <li>♿ <strong>Support for Differently Abled</strong> – Ministry of Social Justice  <button className={styles.knowMore}>Know More</button></li>
-          </ul>
+  <li>
+    🏙️ <strong>Smart Cities Mission</strong> – Ministry of Urban Development
+    <a href="https://smartcities.gov.in" target="_blank" rel="noopener noreferrer">
+      <button className={styles.knowMore}>Know More</button>
+    </a>
+  </li>
+  <li>
+    🌸 <strong>Floriculture Development Guidelines</strong>
+    <a href="https://www.india.gov.in/topics/agriculture/floriculture" target="_blank" rel="noopener noreferrer">
+      <button className={styles.knowMore}>Know More</button>
+    </a>
+  </li>
+  <li>
+    🛡️ <strong>Social Defence Schemes</strong> – Ministry of Social Justice
+    <a href="https://socialjustice.gov.in/scheme-cat" target="_blank" rel="noopener noreferrer">
+      <button className={styles.knowMore}>Know More</button>
+    </a>
+  </li>
+  <li>
+    ♿ <strong>Support for Differently Abled</strong> – Ministry of Social Justice
+    <a href="https://depwd.gov.in/" target="_blank" rel="noopener noreferrer">
+      <button className={styles.knowMore}>Know More</button>
+    </a>
+  </li>
+</ul>
+
 
           <ul>
             <News />

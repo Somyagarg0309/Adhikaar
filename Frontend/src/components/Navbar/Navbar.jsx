@@ -7,12 +7,13 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles["nav-links"]}>
         <Link to="/">Home</Link>
-        <a href="#About">About Us</a>
-        <Link to="/chatbot">Chatbot</Link>
+        <Link to="/" state={{ scrollTo: "about" }}>About Us</Link>
+        <Link to="/chatbot">Personal Assistant</Link>
         <Link to="/schemes-news">Schemes & News</Link>
-        <Link to="/scanner">Scanner</Link>
-        <Link to="/blogs">Blog</Link>
-        <a href="#Contact">Contact Us</a>
+        <Link to="/scanner">Document Scanner</Link>
+        <Link to="/blogs">Blogs</Link>
+        <Link to="/" state={{ scrollTo: "contact" }}>Contact Us</Link>
+
       </div>
     </nav>
   );

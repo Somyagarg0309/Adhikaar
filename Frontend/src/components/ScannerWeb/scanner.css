@@ -1,19 +1,21 @@
 .scanner-wrapper {
   width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, #A5BFCC, #A5BFCC);
+  min-height: 130vh;
+  background: linear-gradient(to bottom right, #121d41, #121d41);
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
+  align-items: flex-start; /* Aligns to top instead of center */
+  padding: 200px 80px 80px;  /* Top padding reduced from 80px to 40px */
   box-sizing: border-box;
 }
 
 .scanner-container {
+  
   width: 100%;
-  max-width: 1200px;
-  height: auto;
-  padding: 3rem 3rem;
+  max-width: 1600px; /* Increased width */
+  min-width: 1000px;  /* Optional: ensures a minimum size */
+  min-height: 700px;  /* Optional: ensures tall container */
+  padding: 4rem 4rem; /* More padding for spacious look */
   background: #F7F7F7;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
@@ -23,11 +25,10 @@
   align-items: stretch;
   box-sizing: border-box;
 }
-
 .scanner-heading {
   font-size: 4rem;
   font-weight: 800;
-  color: #002f50;
+  color: #121d41;
   text-align: center;
   margin-bottom: 2.5rem;
   background: linear-gradient(to right, #24408e, #007c91);

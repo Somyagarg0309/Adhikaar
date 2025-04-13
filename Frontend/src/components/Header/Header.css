@@ -43,92 +43,126 @@
   transform: rotate(10deg) scale(1.1);
 }
 
-.auth-btn {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-  background-color: blue;
-  padding: 0.5rem 1.2rem;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.auth-btn:hover {
-  background-color: #AFDDFF;
-  color: black;
-  transform: scale(1.05);
-}
-
-/* ===== SHARED FORM STYLES (Signup & Login) ===== */
+/* ===== OUTER CONTAINER ===== */
 .container-center {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 600px;
-  background-color: #A5BFCC;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121d41;
+  padding: 20px;
 }
 
-/* Shared form layout */
+/* ===== HEADING STICKY ABOVE FORM ===== */
+.form-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  top: 7%;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  position: sticky;
+}
+
+/* ===== FORM BOX ===== */
 .shared-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-  background-color: white;
+  padding: 30px 40px;
+  background-color: #9bbee6;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  width: 600px;
-  max-width: 600px;
-}
-
-/* Shared input styles */
-.input-field {
-  width: 80%;
-  height: 60px;
-  padding: 15px;
-  margin: 12px 0;
-  border: 1px solid #002f50;
-  border-radius: 8px;
-  font-size: 20px;
-  color: #002f50;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 550px;
+  min-height: 450px;
   box-sizing: border-box;
 }
 
+/* ===== INPUT FIELDS ===== */
+.input-field {
+  width: 100%;
+  height: 55px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 17px;
+  transition: border-color 0.2s ease;
+}
+
 .input-field:focus {
-  border-color: #007bff;
+  border-color: #121d41;
   outline: none;
 }
 
-/* Shared button styles */
+/* ===== BUTTON ===== */
 .submit-btn {
-  width: 80%;
-  padding: 15px;
-  margin-top: 15px;
-  background-color: #002f50;
-  color: white;
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background-color: #121d41;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
-  font-size: 18px;
+  border-radius: 6px;
+  font-size: 17px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: #0000ee;
+  transform: translateY(-1px);
 }
 
-/* Shared heading */
-.form-heading {
-  font-size: 4.5rem;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  text-align: center;
-  color: #002f50;
-  position: sticky;
+/* ===== NAV BUTTON ===== */
+.auth-btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: #0000ee;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background-color: #9bbee6;
+  color: black;
+  transform: translateY(-1px);
+}
+
+/* ===== RESPONSIVE TWEAKS ===== */
+@media (max-width: 600px) {
+  .form-heading {
+    font-size: 2.2rem;
+  }
+
+  .shared-form {
+    padding: 25px 25px;
+  }
+
+  .input-field {
+    font-size: 16px;
+  }
+
+  .submit-btn {
+    font-size: 1.2rem;
+  }
+}
+.input-label {
+  width: 100%;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0d1117;
+  margin: 10px 0 4px 0;
 }

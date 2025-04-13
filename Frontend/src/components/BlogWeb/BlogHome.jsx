@@ -45,7 +45,7 @@ const BlogHome = () => {
         {blogs.map((blog) => (
           <div key={blog._id} className="blog-card">
             <h3>{blog.title}</h3>
-            <p><strong>Author:</strong> {blog.author || "Anonymous"}</p>
+            {/* <p><strong>Author:</strong> {blog.author || ""}</p> */}
             <p>{blog.content.slice(0, 100)}...</p>
             <Link to={`/blogs/${blog._id}`} className="read-btn">Read More</Link>
             <button onClick={() => handleDelete(blog._id)}>Delete</button>
